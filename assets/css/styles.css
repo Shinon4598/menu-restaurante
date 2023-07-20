@@ -1,0 +1,134 @@
+:root{
+    --mostaza:#c39e19;
+}
+body{ 
+     background-color: rgb(221, 223, 226);
+}
+button{
+    border: 1px solid var(--mostaza);
+    padding: 7px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    color: var(--mostaza);
+    cursor: pointer;
+}
+h1{
+    color: #333;
+}
+h3{
+    color: #444;
+}
+p{
+    color: #777;
+}
+button:hover{
+    background-color: var(--mostaza);
+    color: white;
+    scale: 0.96;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.menu__titulo{
+    padding: 30px;
+    border-bottom: 2px solid var(--mostaza);
+}
+.menu__comidas ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.menu__comidas ul li{
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem;
+}
+.menu__imagen{
+    height: 150px;
+    width: 250px;
+    border: 2px solid var(--mostaza);
+}
+.menu__imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.menu__texto{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid slategrey;
+}
+.menu__precio{
+    color: var(--mostaza);
+}
+.menu__btn-carro{
+    width: 80px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    top: 10px;
+}
+.menu__btn-carro img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.menu__carro{
+    display: none;
+    min-width: 400px;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.754);
+    position: fixed;
+    top: 20%;
+    border: 3px solid var(--mostaza);
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+.menu__carro div ul{
+    list-style: none;
+    text-align: start;
+}
+.menu__carro h3{
+    border-bottom: 2px solid var(--mostaza);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.menu__btn-limpiar{
+    bottom: 3px;
+}
+.menu__total{
+    display: flex;
+    flex-direction: column;
+}
+.menu__lista-carrito{
+    padding: 0;
+    width: 100%;
+}
+.cantidad-producto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+.cantidad-producto button{
+    height: 5px;
+    width: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0px 15px;
+}
+
+/*Mostrar lista de carrito*/
+.show{
+    display: flex;
+}

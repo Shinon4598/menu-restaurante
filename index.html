@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div class="contenedor-menu"> 
+        <div class="menu">
+            <button class="menu__btn-carro" onclick="mostrarCarrito()"><img src="/assets/img/carrito.png" alt="carro"></button>
+            <div class="menu__carro" id="carro">
+                <div>
+                    <h3>Carro de Compras</h3>
+                    <ul class="menu__lista-carrito" id="lista-carrito">
+                </div>
+                
+                </ul>
+                <div class="menu__total">
+                    <h3 id="lista-total">Total=</h3>
+                    <button class="menu__btn-limpiar" onclick="limpiarCarrito()">Limpiar carrito</button>
+                </div>
+                
+            </div>
+            <h1 class="menu__titulo">Our menu</h1>
+            <div class="menu__filtro">
+                <button id="btn-todo">All</button>
+                <button id="btn-desayuno">Breakfast</button>
+                <button id="btn-almuerzo">Lunch</button>
+                <button id="btn-bebida">Shakes</button>
+                <button id="btn-cena">Dinner</button>
+            </div class="menu__filtro">
+            <div class="menu__comidas">
+                <ul id="todo-menu"></ul>
+                <ul id="desayuno-menu"></ul>
+                <ul id="almuerzo-menu"></ul>
+                <ul id="bebida-menu"></ul>
+                <ul id="cena-menu"></ul>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
